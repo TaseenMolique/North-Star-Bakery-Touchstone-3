@@ -1,0 +1,64 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+ <meta charset="UTF-8"> 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>North Star Bakery | Contact</title> 
+</head> 
+<body> 
+ <header> 
+ <h1>Contact North Star Bakery</h1> 
+ <p>Send us a question or ask about a bakery pre-order.</p>  </header> 
+ <nav aria-label="Main navigation"> 
+ <ul> 
+ <li><a href="index.html">Home</a></li> 
+ <li><a href="products.html">Products</a></li> 
+ <li><a href="about.html">About</a></li> 
+ <li><a href="contact.html">Contact</a></li> 
+ </ul> 
+ </nav> 
+ <main> 
+ <section> 
+ <h2>Location and Hours</h2> 
+ <address> 
+ North Star Bakery<br> 
+ 125 Main Street<br> 
+ Minneapolis, MN 
+ </address> 
+ <p>Monday-Friday: 6:30 a.m.-5:00 p.m.</p> 
+ <p>Saturday-Sunday: 7:00 a.m.-3:00 p.m.</p> 
+ </section> 
+ <section> 
+ <h2>Pre-Order or General Question</h2> 
+ <form action="#" method="post"> 
+ <fieldset> 
+ <legend>Bakery Request</legend> 
+ <p> 
+ <label for="name">Name:</label><br> 
+ <input type="text" id="name" name="name" 
+ maxlength="50" required> 
+ </p> 
+ <p> 
+ <label for="email">Email:</label><br> 
+ <input type="email" id="email" name="email" required>  </p> 
+ <p> 
+ <label for="pickup-date">Pickup date:</label><br>  <input type="date" id="pickup-date" name="pickup-date" required>  </p> 
+ <p> 
+ <label for="request-type">Request type:</label><br>  <select id="request-type" name="request-type" required>  <option value="">Choose one</option> 
+ <option value="pre-order">Pre-order</option> 
+ <option value="question">General question</option>  </select> 
+ </p> 
+ <p> 
+ <label for="item-details">Item details:</label><br>  <textarea id="item-details" name="item-details" rows="5"  cols="40" minlength="5" required></textarea>  </p> 
+ <p> 
+ <label for="allergy-notes">Allergy notes, if applicable:</label><br>  <textarea id="allergy-notes" name="allergy-notes" rows="4"  cols="40"></textarea> 
+ </p>
+ <button type="submit">Send Request</button> 
+ </fieldset> 
+ </form> 
+ </section> 
+ </main> 
+ <footer> 
+ <p>&copy; 2026 North Star Bakery</p> 
+ </footer> 
+</body> 
+</html> 
