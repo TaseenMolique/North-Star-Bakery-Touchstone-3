@@ -147,3 +147,18 @@ button:focus {
         padding: 30px;
     }
 }
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #6b4226;
+    color: white;
+}
+
+audio {
+    width: 100%;
+    max-width: 500px;
+}
+
+section p {
+    max-width: 800px;
+}
