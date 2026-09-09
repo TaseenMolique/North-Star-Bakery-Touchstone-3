@@ -36,3 +36,30 @@ section {
 h2 {
     color: #6b4226;
 }
+nav {
+    background-color: #6b4226;
+    padding: 10px 16px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+nav a {
+    color: #fff7ed;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 10px;
+    display: block;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #c98255;
+    color: #2e2a27;
+}
