@@ -132,3 +132,18 @@ button:focus {
     background-color: #c98255;
     color: #2e2a27;
 }
+@media (min-width: 768px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    nav a {
+        padding: 10px 16px;
+    }
+
+    main {
+        padding: 30px;
+    }
+}
