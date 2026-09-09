@@ -133,6 +133,30 @@ function validateForm() {
     return valid;
 }
 
+function saveCustomerInfo() {
+    const name = document.getElementById("name");
+    const email = document.getElementById("email");
+
+    localStorage.setItem("bakeryName", name.value.trim());
+    localStorage.setItem("bakeryEmail", email.value.trim());
+}
+
+function loadCustomerInfo() {
+    const name = document.getElementById("name");
+    const email = document.getElementById("email");
+
+    const savedName = localStorage.getItem("bakeryName");
+    const savedEmail = localStorage.getItem("bakeryEmail");
+
+    if (savedName) {
+        name.value = savedName;
+    }
+
+    if (savedEmail) {
+        email.value = savedEmail;
+    }
+}
+
 function setupForm() {
     const form = document.getElementById("bakery-form");
 
@@ -140,10 +164,14 @@ function setupForm() {
         return;
     }
 
+    loadCustomerInfo();
+
     form.addEventListener("submit", function(event) {
         event.preventDefault();
 
         if (validateForm()) {
+            saveCustomerInfo();
+
             const status = document.getElementById("form-status");
 
             status.textContent =
