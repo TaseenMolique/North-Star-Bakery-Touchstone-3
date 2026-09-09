@@ -86,3 +86,49 @@ figcaption {
     font-style: italic;
     color: #2e2a27;
 }
+form {
+    max-width: 600px;
+}
+
+fieldset {
+    border: 1px solid #c98255;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+legend {
+    color: #6b4226;
+    font-weight: bold;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 4px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+}
+
+button {
+    background-color: #6b4226;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    background-color: #c98255;
+    color: #2e2a27;
+}
